@@ -1,0 +1,60 @@
+{
+  "shape": "package",
+  "pkg": "noor",
+  "globalName": "PlannedByAyesha",
+  "projectId": "9309e758-8f30-4b09-931e-031b82141c57",
+  "buildCmd": "npm run build:ds",
+  "srcDir": "components/site",
+  "tsconfig": "tsconfig.json",
+  "cssEntry": "dist/design-system.css",
+  "readmeHeader": ".design-sync/conventions.md",
+  "provider": {
+    "component": "SiteRoot",
+    "props": {
+      "reveal": "none",
+      "grain": false
+    }
+  },
+  "overrides": {
+    "SiteRoot": {
+      "cardMode": "single",
+      "viewport": "1440x1300"
+    },
+    "Header": {
+      "cardMode": "single",
+      "viewport": "1440x420"
+    },
+    "Hero": {
+      "cardMode": "single",
+      "viewport": "1440x900"
+    },
+    "Founder": {
+      "cardMode": "single",
+      "viewport": "1440x1000"
+    },
+    "WorkGallery": {
+      "cardMode": "single",
+      "viewport": "1440x2100"
+    },
+    "Process": {
+      "cardMode": "single",
+      "viewport": "1440x1800"
+    },
+    "Testimonial": {
+      "cardMode": "single",
+      "viewport": "1440x700"
+    },
+    "Inquire": {
+      "cardMode": "single",
+      "viewport": "1440x1000"
+    },
+    "Footer": {
+      "cardMode": "single",
+      "viewport": "1440x560"
+    },
+    "InquireForm": {
+      "cardMode": "column",
+      "viewport": "1100x1100"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "//": "Design-system build: emits components/site/* plus its content module to dist/ with declarations, for /design-sync. Not used by the Next.js app.",
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "declarationMap": false,
+    "sourceMap": false,
+    "incremental": false,
+    "outDir": "dist",
+    "rootDir": ".",
+    "plugins": []
+  },
+  "include": ["components/site/**/*", "components/hero-copy.ts", "lib/content.ts"],
+  "exclude": ["node_modules", ".next", "dist"]
+}
