@@ -4,3 +4,14 @@ node_modules
 out
 .DS_Store
 *.log
+.env*
+*.tsbuildinfo
+!.env.example
+
+# design-system build + /design-sync working state
+dist
+.ds-sync
+ds-bundle
+.design-sync/.cache
+.design-sync/learnings
+.design-sync/node_modules

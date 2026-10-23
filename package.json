@@ -2,16 +2,28 @@
   "name": "noor",
   "version": "0.1.0",
   "private": true,
+  "main": "./dist/components/site/index.js",
+  "module": "./dist/components/site/index.js",
+  "types": "./dist/components/site/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/components/site/index.d.ts",
+      "import": "./dist/components/site/index.js"
+    },
+    "./styles.css": "./dist/design-system.css"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build:ds": "tsc -p tsconfig.ds.json && node scripts/build-ds-dist.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
     "next": "^16.2.9",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "resend": "^6.25.0"
   },
   "devDependencies": {
     "@types/node": "^22.15.21",
